@@ -1,22 +1,21 @@
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .overlay {
   // height: 600px;
-  height: 400px;
+  max-height: auto;
   // width: 1600px;
-  width: 480px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
 
   background-repeat: no-repeat;
-  // background-size: cover;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 .hero__text {
@@ -26,8 +25,8 @@
   margin-bottom: 30px;
 
   color: #ffffff;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
@@ -84,8 +83,8 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -131,13 +130,16 @@
   align-items: flex-start;
 
   padding: 40px;
-
-  &label:not(:last-child) {
+  & label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  & label:not(:last-child) {
     margin-bottom: 4px;
   }
 
-  &:hover,
-  &:focus {
+  & :hover,
+  & :focus {
     border-color: var(--color-accent);
   }
 }
@@ -147,7 +149,7 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -180,10 +182,11 @@
 
   transition: color 250ms var(--animation-cubic);
 
-  &:hover,
-  &:focus {
+  & :hover,
+  & :focus {
     color: var(--color-accent);
     border-color: var(--color-accent);
+    cursor: pointer;
   }
 }
 
@@ -210,8 +213,8 @@
 
   &::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
@@ -224,8 +227,10 @@
   margin-right: auto;
   margin-bottom: 30px;
 
+  font-size: 12px;
+  line-height: 14px;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   & input {
     width: 15px;
@@ -235,6 +240,10 @@
   }
   & label {
     user-select: none;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
   }
 }
 
