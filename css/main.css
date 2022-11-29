@@ -385,6 +385,114 @@ img {
 }
 
 /* ---------------------------header--------------------------- */
+header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nav-bar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.nav-bar__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-bar__iconClose {
+  display: none;
+}
+
+.nav-bar__button.is-open .nav-bar__iconClose {
+  display: block;
+}
+.nav-bar__button.is-open .nav-bar__iconBurger {
+  display: none;
+}
+
+.nav-bar__logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #000000;
+  line-height: 31px;
+}
+.nav-bar__logo span {
+  color: var(--color-accent);
+}
+
+.nav-bar__item {
+  position: relative;
+}
+.nav-bar__link {
+  color: var(--color-main);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  transition: color 250ms var(--animation-cubic);
+}
+.nav-bar__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+}
+.nav-bar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform 250ms var(--animation-cubic);
+}
+.nav-bar__link:hover, .nav-bar__link:focus {
+  color: var(--color-accent);
+}
+.nav-bar__link:hover::after, .nav-bar__link:focus::after {
+  transform: scaleX(1);
+}
+
+.cont-menu__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.cont-menu__icon--mail {
+  max-width: 16px;
+  max-height: 12px;
+}
+.cont-menu__icon--phone {
+  max-width: 10px;
+  max-height: 16px;
+}
+
+.cont-menu__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cont-menu__link {
+  color: var(--color-alt);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  transition: color 250ms var(--animation-cubic);
+}
+.cont-menu__link:hover, .cont-menu__link:focus {
+  color: var(--color-accent);
+}
+
 /* ---------------------------hero--------------------------- */
 .hero {
   text-align: center;
@@ -394,7 +502,7 @@ img {
 
 .overlay {
   max-height: auto;
-  max-width: 100%;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -446,6 +554,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--animation-cubic);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -454,6 +563,10 @@ img {
 }
 .backdrop.is-hidden.modal {
   transform: scale(1.1) translate(-50%, -50%);
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .modal {
@@ -829,6 +942,117 @@ img {
 }
 
 /* ---------------------------main portfolio--------------------------- */
+.port {
+  padding-top: 96px;
+  padding-bottom: 92px;
+}
+
+.port__menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portMenu__button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  font-family: inherit;
+  color: var(--color-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 250ms var(--animation-cubic), background-color 250ms var(--animation-cubic), box-shadow 250ms var(--animation-cubic);
+}
+.portMenu__button:hover, .portMenu__button:focus, .portMenu__button:active {
+  color: #ffffff;
+  background-color: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portMenu__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.port__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.port__card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: box-shadow 250ms var(--animation-cubic);
+}
+.port__card:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.port__card:nth-child(3n) {
+  margin-right: 0px;
+}
+.port__card:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
+.portCard__container {
+  padding: 24px 20px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.portCard__title {
+  color: var(--color-main);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.portCard__text {
+  color: var(--color-alt);
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.portCard__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portCard__animationOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms var(--animation-cubic);
+}
+
+.portCard:hover .portCard__animationOverlay {
+  transform: translateY(0);
+}
+
+.portCard__animationOverlay p {
+  margin: 63px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
 /* ---------------------------footer--------------------------- */
 footer {
   padding-top: 60px;

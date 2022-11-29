@@ -14,11 +14,17 @@ header {
   border: none;
   background-color: transparent;
 }
+
 .nav-bar__iconClose {
   display: none;
 }
-.nav-bar__button.is-open .nav-bar__iconClose {
-  display: block;
+.nav-bar__button.is-open {
+  & .nav-bar__iconClose {
+    display: block;
+  }
+  & .nav-bar__iconBurger {
+    display: none;
+  }
 }
 
 .nav-bar__logo {

@@ -2,13 +2,13 @@
   padding-top: 96px;
   padding-bottom: 92px;
 }
-.port-menu {
+.port__menu {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.port-menu .button {
+.portMenu__button {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
@@ -28,47 +28,47 @@
 
   transition: color 250ms var(--animation-cubic), background-color 250ms var(--animation-cubic),
     box-shadow 250ms var(--animation-cubic);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    background-color: var(--color-accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }
-.port-menu .btn:not(:last-child) {
+.portMenu__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.port-menu .button:hover,
-.port-menu .button:focus,
-.port-menu .button:active {
-  color: #ffffff;
-  background-color: var(--color-accent);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.port-gallery {
+.port__gallery {
   display: flex;
   flex-wrap: wrap;
 }
-.port-card {
+.port__card {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms var(--animation-cubic);
-}
-.port-card:hover {
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
-.port-card:nth-child(3n) {
-  margin-right: 0px;
-}
-.port-card:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-
-.card-container {
+.portCard__container {
   padding: 24px 20px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
-.port-card-title {
+.portCard__title {
   color: var(--color-main);
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -76,16 +76,16 @@
   font-weight: 700;
   margin-bottom: 4px;
 }
-.port-card-text {
+.portCard__text {
   color: var(--color-alt);
   font-size: 16px;
   line-height: calc(30 / 16);
 }
-.thumb {
+.portCard__thumb {
   position: relative;
   overflow: hidden;
 }
-.animation-overlay {
+.portCard__animationOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,10 +99,12 @@
   transform: translateY(100%);
   transition: transform 250ms var(--animation-cubic);
 }
-.port-card:hover .animation-overlay {
-  transform: translateY(0);
+.portCard {
+  &:hover &__animationOverlay {
+    transform: translateY(0);
+  }
 }
-.animation-overlay p {
+.portCard__animationOverlay p {
   margin: 63px 24px;
 
   font-size: 18px;

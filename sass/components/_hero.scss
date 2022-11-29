@@ -8,7 +8,7 @@
   // height: 600px;
   max-height: auto;
   // width: 1600px;
-  max-width: 100%;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 
@@ -68,6 +68,8 @@
 
   opacity: 1;
   transition: opacity 250ms var(--animation-cubic);
+
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -77,7 +79,9 @@
     transform: scale(1.1) translate(-50%, -50%);
   }
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .modal {
   position: absolute;
   top: 50%;
