@@ -943,14 +943,16 @@ body.modal-open {
 
 /* ---------------------------main portfolio--------------------------- */
 .port {
-  padding-top: 96px;
-  padding-bottom: 92px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .port__menu {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  min-height: 91px;
+  align-content: space-between;
 }
 
 .portMenu__button {
@@ -983,23 +985,18 @@ body.modal-open {
 
 .port__gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .port__card {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  width: 100%;
+  max-width: 480px;
   margin-bottom: 30px;
   transition: box-shadow 250ms var(--animation-cubic);
 }
 .port__card:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.port__card:nth-child(3n) {
-  margin-right: 0px;
-}
-.port__card:nth-last-child(-n+3) {
-  margin-bottom: 0px;
 }
 
 .portCard__container {
