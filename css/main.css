@@ -374,11 +374,10 @@ img {
 }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 100%;
-    margin: 0;
+    max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 768px;
   }
@@ -769,6 +768,14 @@ body.modal-open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -780,6 +787,16 @@ body.modal-open {
 }
 .features__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__item {
+    width: calc(50% - 15px);
+  }
 }
 
 .features__iconOverlay {
@@ -826,7 +843,6 @@ body.modal-open {
   flex-direction: column;
   align-items: center;
 }
-
 .team__title {
   margin-bottom: 30px;
   color: var(--color-main);
@@ -839,15 +855,38 @@ body.modal-open {
   width: 100%;
   max-width: 450px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 768px;
+  }
+}
 
 .team__card {
   background-color: #ffffff;
   width: 100%;
+  padding-bottom: 24px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team__card:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__card {
+    width: calc(50% - 15px);
+  }
+}
+
+.team__img {
+  width: 100%;
 }
 
 .team__text {
@@ -910,13 +949,18 @@ body.modal-open {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: -15px;
+  gap: 30px;
 }
 
-.clients__item {
-  margin: 15px;
-  width: calc((100% - 60px) / 2);
-  max-width: 210px;
+@media screen and (max-width: 767px) {
+  .clients__item {
+    max-width: 210px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients__item {
+    max-width: 226px;
+  }
 }
 
 .clients__title {
