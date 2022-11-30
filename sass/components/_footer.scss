@@ -9,6 +9,16 @@ footer .container {
   flex-direction: column;
   align-items: center;
 }
+.footer__tabletOverlay {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
 .footer__logo {
   display: inline-block;
   color: #fff;
@@ -24,6 +34,9 @@ footer .container {
   align-items: center;
 
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .addressMenu {
   display: flex;
@@ -53,6 +66,9 @@ footer .container {
   // flex-direction: column;
   // align-items: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .footer__title {
   margin-bottom: 20px;
