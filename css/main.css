@@ -388,6 +388,12 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-bar nav {
   display: flex;
   align-items: center;
@@ -401,6 +407,11 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .nav-bar__button {
+    display: none;
+  }
 }
 
 .nav-bar__iconClose {
@@ -424,10 +435,26 @@ header {
   color: var(--color-accent);
 }
 
+.nav-bar__menu {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .nav-bar__menu {
+    display: none;
+  }
+}
+
 .nav-bar__item {
   position: relative;
 }
+.nav-bar__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-bar__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--color-main);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -464,9 +491,25 @@ header {
   transform: scaleX(1);
 }
 
+.cont-menu {
+  display: flex;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .cont-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cont-menu {
+    display: block;
+    margin-left: 0;
+  }
+}
+
 .cont-menu__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .cont-menu__icon--mail {
   max-width: 16px;
@@ -475,10 +518,6 @@ header {
 .cont-menu__icon--phone {
   max-width: 10px;
   max-height: 16px;
-}
-
-.cont-menu__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .cont-menu__link {

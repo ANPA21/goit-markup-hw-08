@@ -14,25 +14,27 @@
       <!-- navigation bar -->
       <div class="container">
         <div class="nav-bar">
-          <nav>
+          <div class="logoOverlay">
             <a href="./index.html" class="nav-bar__logo"><span>Web</span>Studio</a>
-           
-            <!-- <ul class="nav-bar__menu">
+          </div>
+          <nav>
+            <ul class="nav-bar__menu">
               <li class="nav-bar__item"><a class="nav-bar__link nav-bar__link--active" href="./index.html">Студия</a></li>
 
               <li class="nav-bar__item"><a class="nav-bar__link" href="./portfollio.html">Портфолио</a></li>
               <li class="nav-bar__item"><a class="nav-bar__link" href="">Контакты</a></li>
-            </ul> -->
-             <button type="button" class="nav-bar__button is-open js-open-menu" menuBtnOpen>
+            </ul>
+
+            <button type="button" class="nav-bar__button is-open js-open-menu" menuBtnOpen>
               <svg width="40px" height="40px">
-                <use class="nav-bar__iconBurger" href="./images/sprite.svg#icon-burger" ></use>
-                <use class="nav-bar__iconClose" href="./images/sprite.svg#icon-close_big" ></use>
+                <use class="nav-bar__iconBurger" href="./images/sprite.svg#icon-burger"></use>
+                <use class="nav-bar__iconClose" href="./images/sprite.svg#icon-close_big"></use>
               </svg>
             </button>
           </nav>
 
-      <!-- contacts -->
-      <!-- <ul class="cont-menu">
+          <!-- contacts -->
+          <ul class="cont-menu">
             <li class="cont-menu__item">
               <a class="cont-menu__link" href="mailto:info@devstudio.com">
                 <svg class="cont-menu__icon cont-menu__icon--mail">
@@ -52,7 +54,7 @@
             </li>
           </ul>
         </div>
-      </div> -->
+      </div>
     </header>
 
     <main>
@@ -189,7 +191,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img src="./images/igor-opt.jpg" alt="Игорь Демьяненко" class="team__img"/>
+              <img src="./images/igor-opt.jpg" alt="Игорь Демьяненко" class="team__img" />
               <div class="team__text member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__role">Product Designer</p>
@@ -396,83 +398,83 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-       <div class="footer__tabletOverlay">
-         <div class="footer__address">
-          <a href="./index.html" class="footer__logo nav-bar__logo"><span>Web</span>Studio</a>
-          <address>
-            <ul class="addressMenu">
-              <li class="addressMenu__item">
+        <div class="footer__tabletOverlay">
+          <div class="footer__address">
+            <a href="./index.html" class="footer__logo nav-bar__logo"><span>Web</span>Studio</a>
+            <address>
+              <ul class="addressMenu">
+                <li class="addressMenu__item">
+                  <a
+                    class="addressMenu__link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="addressMenu__item">
+                  <a href="mailto:info@example.com" class="addressMenu__link addressMenu__link--grey">info@example.com</a>
+                </li>
+                <li class="addressMenu__item">
+                  <a href="tel:+380991111111" class="addressMenu__link addressMenu__link--grey">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__media">
+            <p class="footer__title">Присоединяйтесь</p>
+            <ul class="socials">
+              <li class="socials__item">
                 <a
-                  class="addressMenu__link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  class="socials__link socials__link--grey"
                 >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addressMenu__item">
-                <a href="mailto:info@example.com" class="addressMenu__link addressMenu__link--grey">info@example.com</a>
+              <li class="socials__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addressMenu__item">
-                <a href="tel:+380991111111" class="addressMenu__link addressMenu__link--grey">+38 099 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__media">
-          <p class="footer__title">Присоединяйтесь</p>
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-       </div>
         <form class="footer__form subForm">
           <p class="footer__title">Подпишитесь на рассылку</p>
           <div class="subForm__email">
