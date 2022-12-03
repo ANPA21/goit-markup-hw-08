@@ -414,17 +414,6 @@ header {
   }
 }
 
-.nav-bar__iconClose {
-  display: none;
-}
-
-.nav-bar__button.is-open .nav-bar__iconClose {
-  display: block;
-}
-.nav-bar__button.is-open .nav-bar__iconBurger {
-  display: none;
-}
-
 .nav-bar__logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -603,7 +592,8 @@ header {
   transform: scale(1.1) translate(-50%, -50%);
 }
 
-body.modal-open {
+body.modal-open,
+body.menu-open {
   overflow: hidden;
 }
 
@@ -1333,4 +1323,105 @@ footer .container {
 }
 .subForm input:hover, .subForm input:focus {
   background-color: #41424f;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container.is-open .nav-bar__iconClose {
+  display: block;
+}
+.menu-container.is-open .nav-bar__iconBurger {
+  display: none;
+}
+
+.menu-toggle {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: color 250ms var(--animation-cubic), filter 250ms var(--animation-cubic);
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  color: var(--color-accent);
+}
+
+.mobile-nav-bar__iconClose {
+  fill: currentColor;
+}
+
+.mobile-nav-bar__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-nav-bar__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+  transition: color 250ms var(--animation-cubic);
+}
+.mobile-nav-bar__link:hover, .mobile-nav-bar__link:focus {
+  color: var(--color-accent);
+}
+
+.mobile-cont-menu {
+  margin-bottom: 64px;
+}
+
+.mobile-cont-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-cont-menu__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--color-alt);
+  transition: color 250ms var(--animation-cubic);
+}
+.mobile-cont-menu__link:hover, .mobile-cont-menu__link:focus {
+  color: var(--color-accent);
+}
+.mobile-cont-menu__link--blue {
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--color-accent);
+}
+
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-accent);
+  transition: color 250ms var(--animation-cubic);
+}
+.mobile-socials__link:not(:last-child) {
+  margin-right: 20px;
 }

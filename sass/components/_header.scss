@@ -24,17 +24,17 @@ header {
   }
 }
 
-.nav-bar__iconClose {
-  display: none;
-}
-.nav-bar__button.is-open {
-  & .nav-bar__iconClose {
-    display: block;
-  }
-  & .nav-bar__iconBurger {
-    display: none;
-  }
-}
+// .nav-bar__iconClose {
+//   display: none;
+// }
+// .nav-bar__button.is-open {
+//   & .nav-bar__iconClose {
+//     display: block;
+//   }
+//   & .nav-bar__iconBurger {
+//     display: none;
+//   }
+// }
 
 .nav-bar__logo {
   font-family: "Raleway", sans-serif;
@@ -144,9 +144,9 @@ header {
   }
 }
 
-.cont-menu__item:not(:last-child) {
-  // margin-right: 30px;
-}
+// .cont-menu__item:not(:last-child) {
+//   // margin-right: 30px;
+// }
 .cont-menu__link {
   // display: flex;
   // align-items: center;
