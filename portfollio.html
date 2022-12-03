@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-      <header>
+    <header>
       <!-- navigation bar -->
       <div class="container">
         <div class="nav-bar">
           <nav>
             <a href="./index.html" class="nav-bar__logo"><span>Web</span>Studio</a>
             <ul class="nav-bar__menu">
-              <li class="nav-bar__item"><a class="nav-bar__link " href="./index.html">Студия</a></li>
-             
+              <li class="nav-bar__item"><a class="nav-bar__link" href="./index.html">Студия</a></li>
+
               <li class="nav-bar__item"><a class="nav-bar__link nav-bar__link--active" href="./portfollio.html">Портфолио</a></li>
-               <li class="nav-bar__item"><a class="nav-bar__link" href="">Контакты</a></li>
+              <li class="nav-bar__item"><a class="nav-bar__link" href="">Контакты</a></li>
             </ul>
           </nav>
 
@@ -59,12 +59,12 @@
             <li class="portMenu__item"><button type="button" class="portMenu__button">Дизайн</button></li>
             <li class="portMenu__item"><button type="button" class="portMenu__button">Маркетинг</button></li>
           </ul>
-          
+
           <ul class="port__gallery">
             <li class="port__card portCard">
               <a href="" class="portCard__link">
                 <div class="portCard__thumb">
-                  <img src="./images/tehno-opt.jpg" alt="Изображение веб-сайта Технокряк" width="370" />
+                  <img class="portCard__img" src="./images/tehno-opt.jpg" alt="Изображение веб-сайта Технокряк" />
 
                   <div class="portCard__animationOverlay">
                     <p>
@@ -82,7 +82,7 @@
             <li class="port__card portCard">
               <a href="" class="portCard__link">
                 <div class="portCard__thumb">
-                  <img src="./images/poster-opt.jpg" alt="Постер баскетбольного матча" width="370" />
+                  <img class="portCard__img" src="./images/poster-opt.jpg" alt="Постер баскетбольного матча" />
                   <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
                   </div>
@@ -95,9 +95,9 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"></a>
+              <a href="" class="portCard__link">
                 <div class="portCard__thumb">
-                  <img src="./images/restor-opt.jpg" alt="Логотип ресторана Seafood" width="370" />
+                  <img class="portCard__img" src="./images/restor-opt.jpg" alt="Логотип ресторана Seafood" />
                   <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
                   </div>
@@ -110,13 +110,13 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb">   <img src="./images/prime-opt.jpg" alt="Изображение наушников Prime" width="370" /> <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img class="portCard__img" src="./images/prime-opt.jpg" alt="Изображение наушников Prime" />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div> </div>
-              
-
+                  </div>
+                </div>
 
                 <div class="portCard__container">
                   <h2 class="portCard__title">Проект Prime</h2>
@@ -125,12 +125,14 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb"> <img src="./images/boxes-opt.jpg" alt="Илюстрация приложения Boxes" width="370" /> <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img class="portCard__img" src="./images/boxes-opt.jpg" alt="Илюстрация приложения Boxes" />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div> </div>
-               
+                  </div>
+                </div>
+
                 <div class="portCard__container">
                   <h2 class="portCard__title">Проект Boxes</h2>
                   <p class="portCard__text">Приложение</p>
@@ -138,12 +140,18 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb"><img src="./images/isnpir-opt.jpg" alt="Изображение веб-сайта Inspiration has no Borders" width="370" />  <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img
+                    class="portCard__img"
+                    src="./images/isnpir-opt.jpg"
+                    alt="Изображение веб-сайта Inspiration has no Borders"
+                  />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div> </div>
-                
+                  </div>
+                </div>
+
                 <div class="portCard__container">
                   <h2 class="portCard__title">Inspiration has no Borders</h2>
                   <p class="portCard__text">Веб-сайт</p>
@@ -151,12 +159,14 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb">    <img src="./images/book-opt.jpg" alt="Изображение книги Limited Edition" width="370" /> <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img class="portCard__img" src="./images/book-opt.jpg" alt="Изображение книги Limited Edition" />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div></div>
-            
+                  </div>
+                </div>
+
                 <div class="portCard__container">
                   <h2 class="portCard__title">Издание Limited Edition</h2>
                   <p class="portCard__text">Дизайн</p>
@@ -164,12 +174,14 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb"> <img src="./images/lab-opt.jpg" alt="Изображение магазинной бирки с надписью LABEL TAG" width="370" />  <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img class="portCard__img" src="./images/lab-opt.jpg" alt="Изображение магазинной бирки с надписью LABEL TAG" />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div> </div>
-               
+                  </div>
+                </div>
+
                 <div class="portCard__container">
                   <h2 class="portCard__title">Проект LAB</h2>
                   <p class="portCard__text">Маркетинг</p>
@@ -177,16 +189,19 @@
               >
             </li>
             <li class="port__card portCard">
-              <a href="" class="portCard__link"
-                >
-                <div class="portCard__thumb"> <img
-                  src="./images/business-opt.jpg"
-                  alt="Изображение компьютера с открытым приложением Growing Business"
-                  width="370"
-                />  <div class="portCard__animationOverlay">
+              <a href="" class="portCard__link">
+                <div class="portCard__thumb">
+                  <img
+                    class="portCard__img"
+                    src="./images/business-opt.jpg"
+                    alt="Изображение компьютера с открытым приложением
+                  Growing Business"
+                  />
+                  <div class="portCard__animationOverlay">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, natus?</p>
-                  </div> </div>
-               
+                  </div>
+                </div>
+
                 <div class="portCard__container">
                   <h2 class="portCard__title">Growing Business</h2>
                   <p class="portCard__text">Приложение</p>
@@ -201,80 +216,82 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div>
-          <a href="./index.html" class="footer__logo nav-bar__logo"><span>Web</span>Studio</a>
-          <address>
-            <ul class="addressMenu">
-              <li class="addressMenu__item">
+        <div class="footer__tabletOverlay">
+          <div class="footer__address">
+            <a href="./index.html" class="footer__logo nav-bar__logo"><span>Web</span>Studio</a>
+            <address>
+              <ul class="addressMenu">
+                <li class="addressMenu__item">
+                  <a
+                    class="addressMenu__link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="addressMenu__item">
+                  <a href="mailto:info@example.com" class="addressMenu__link addressMenu__link--grey">info@example.com</a>
+                </li>
+                <li class="addressMenu__item">
+                  <a href="tel:+380991111111" class="addressMenu__link addressMenu__link--grey">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__media">
+            <p class="footer__title">Присоединяйтесь</p>
+            <ul class="socials">
+              <li class="socials__item">
                 <a
-                  class="addressMenu__link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  class="socials__link socials__link--grey"
                 >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addressMenu__item">
-                <a href="mailto:info@example.com" class="addressMenu__link addressMenu__link--grey">info@example.com</a>
+              <li class="socials__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addressMenu__item">
-                <a href="tel:+380991111111" class="addressMenu__link addressMenu__link--grey">+38 099 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="socials__link socials__link--grey"
+                >
+                  <svg class="socials__icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__media">
-          <p class="footer__title">Присоединяйтесь</p>
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="socials__link socials__link--grey"
-              >
-                <svg class="socials__icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="footer__form subForm">
           <p class="footer__title">Подпишитесь на рассылку</p>

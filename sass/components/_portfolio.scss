@@ -6,9 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  min-height: 91px;
-
+  gap: 15px 8px;
   align-content: space-between;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .portMenu__button {
@@ -42,14 +45,20 @@
   }
 }
 
-.portMenu__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .portMenu__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .port__gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: unset;
+  }
 }
 .port__card {
   width: 100%;
@@ -67,6 +76,13 @@
   //   &:nth-last-child(-n + 3) {
   //     margin-bottom: 0px;
   //   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+}
+.portCard__link {
+  height: 100%;
 }
 
 .portCard__container {
@@ -90,6 +106,9 @@
 .portCard__thumb {
   position: relative;
   overflow: hidden;
+}
+.portCard__img {
+  width: 100%;
 }
 .portCard__animationOverlay {
   position: absolute;

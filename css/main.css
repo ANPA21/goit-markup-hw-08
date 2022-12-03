@@ -996,8 +996,13 @@ body.modal-open {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  min-height: 91px;
+  gap: 15px 8px;
   align-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .port__menu {
+    justify-content: center;
+  }
 }
 
 .portMenu__button {
@@ -1024,14 +1029,18 @@ body.modal-open {
   border-radius: 4px;
 }
 
-.portMenu__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .port__gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .port__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: unset;
+  }
 }
 
 .port__card {
@@ -1042,6 +1051,16 @@ body.modal-open {
 }
 .port__card:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .port__card {
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+}
+
+.portCard__link {
+  height: 100%;
 }
 
 .portCard__container {
@@ -1068,6 +1087,10 @@ body.modal-open {
 .portCard__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portCard__img {
+  width: 100%;
 }
 
 .portCard__animationOverlay {
