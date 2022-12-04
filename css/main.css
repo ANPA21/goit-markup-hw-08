@@ -1310,14 +1310,26 @@ footer .container {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  footer .container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__tabletOverlay {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     width: 100%;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tabletOverlay {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1373,6 +1385,11 @@ footer .container {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__media {
+    margin-left: 70px;
+  }
+}
 
 .footer__title {
   margin-bottom: 20px;
@@ -1412,12 +1429,24 @@ footer .container {
   width: 100%;
   max-width: 450px;
 }
+@media screen and (min-width: 1200px) {
+  .subForm {
+    margin-left: auto;
+    width: unset;
+    max-width: unset;
+  }
+}
 
 .subForm__email {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subForm__email {
+    flex-direction: row;
+  }
 }
 
 .subForm__button {
@@ -1474,6 +1503,13 @@ footer .container {
 }
 .subForm input:hover, .subForm input:focus {
   background-color: #41424f;
+}
+@media screen and (min-width: 1200px) {
+  .subForm input {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .menu-container {
