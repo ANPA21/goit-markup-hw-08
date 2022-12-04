@@ -537,6 +537,12 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .overlay {
   max-height: auto;
@@ -547,6 +553,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    height: 600px;
+  }
 }
 
 .hero__text {
@@ -560,6 +571,12 @@ header {
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .hero__button {
@@ -612,13 +629,17 @@ body.menu-open {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 609px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--animation-cubic);
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .buttonClose {
@@ -673,6 +694,11 @@ body.menu-open {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-main);
+}
+@media screen and (min-width: 1200px) {
+  .orderForm__title {
+    line-height: 23px;
+  }
 }
 
 .orderForm__overlay {
@@ -769,6 +795,12 @@ body.menu-open {
 }
 .orderForm__checkbox label:hover, .orderForm__checkbox label:focus {
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .orderForm__checkbox label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .orderForm__link {
