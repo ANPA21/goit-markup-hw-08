@@ -512,6 +512,11 @@ header {
   max-height: 16px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .cont-menu__item:not(:last-child) {
     margin-right: 30px;
@@ -1041,9 +1046,10 @@ body.menu-open {
 .team__img {
   width: 100%;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__img {
     width: 370px;
+    max-width: unset;
   }
 }
 
@@ -1404,6 +1410,11 @@ footer .container {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
 }
 
 .social .icons {

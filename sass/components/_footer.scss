@@ -93,6 +93,9 @@ footer .container {
   color: #fff;
 
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .social .icons {
   display: flex;
