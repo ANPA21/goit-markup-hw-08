@@ -10,20 +10,23 @@
 }
 
 .overlay {
-  // height: 600px;
-  max-height: auto;
-  // width: 1600px;
+  height: 400px;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/adaptive/hero.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media screen and (min-width: 1200px) {
     height: 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../../images/adaptive/hero@2x.jpg");
   }
 }
 .hero__text {
