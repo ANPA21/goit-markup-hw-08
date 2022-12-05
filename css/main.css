@@ -377,7 +377,7 @@ img {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -487,12 +487,12 @@ header {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cont-menu {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cont-menu {
     display: block;
     margin-left: 0;
@@ -577,6 +577,11 @@ header {
   font-weight: 900;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1199px) {
+  .hero__text {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__text {
     font-size: 44px;
@@ -640,7 +645,7 @@ body.menu-open {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--animation-cubic);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
@@ -850,7 +855,7 @@ body.menu-open {
   width: 100%;
   gap: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__list {
     display: flex;
     flex-direction: row;
@@ -870,7 +875,7 @@ body.menu-open {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     width: calc(50% - 15px);
     display: block;
@@ -910,7 +915,7 @@ body.menu-open {
   font-weight: 700;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__title {
     text-align: start;
   }
@@ -928,7 +933,7 @@ body.menu-open {
   padding-bottom: 94px;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about {
     display: none;
   }
@@ -1008,7 +1013,7 @@ body.menu-open {
   gap: 30px;
   max-width: 450px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -1037,7 +1042,7 @@ body.menu-open {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__card {
     width: calc(50% - 15px);
   }
@@ -1048,7 +1053,7 @@ body.menu-open {
 }
 @media screen and (min-width: 1200px) {
   .team__img {
-    width: 370px;
+    width: 270px;
     max-width: unset;
   }
 }
@@ -1132,7 +1137,7 @@ body.menu-open {
     max-width: 210px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     max-width: 226px;
   }
@@ -1328,7 +1333,7 @@ footer .container {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__tabletOverlay {
     display: flex;
     align-items: baseline;
