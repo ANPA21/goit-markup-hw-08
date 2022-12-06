@@ -36,7 +36,6 @@
   // display: flex;
   width: 100%;
   gap: 30px;
-  max-width: 450px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -67,13 +66,7 @@
     width: calc(50% - 15px);
   }
 }
-.team__img {
-  width: 100%;
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    max-width: unset;
-  }
-}
+
 .team__text {
   text-align: center;
   margin-top: 30px;

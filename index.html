@@ -170,30 +170,33 @@
             <li class="about__banner">
               <img
                 class="about__image"
-                srcset="./images/adaptive/box1.jpg 1x, ./images/adaptive/box1@2x.jpg 2x"
-                src="./images/adaptive/box1.jpg"
+                srcset="./images/adaptive/desk-box1.jpg 1x, ./images/adaptive/desk-box1@2x.jpg 2x"
+                src="./images/adaptive/desk-box1.jpg"
                 alt="Картинка компьютера"
                 width="370px"
+                loading="lazy"
               />
               <p class="about__label">Десктопные приложения</p>
             </li>
             <li class="about__banner">
               <img
                 class="about__image"
-                srcset="./images/adaptive/box2.jpg 1x, ./images/adaptive/box2@2x.jpg 2x"
-                src="./images/adaptive/box2.jpg"
+                srcset="./images/adaptive/desk-box2.jpg 1x, ./images/adaptive/desk-box2@2x.jpg 2x"
+                src="./images/adaptive/desk-box2.jpg"
                 alt="Картинка телефона"
                 width="370px"
+                loading="lazy"
               />
               <p class="about__label">Мобильные приложения</p>
             </li>
             <li class="about__banner">
               <img
                 class="about__image"
-                srcset="./images/adaptive/box3.jpg 1x, ./images/adaptive/box3@2x.jpg 2x"
-                src="./images/adaptive/box3.jpg"
+                srcset="./images/adaptive/desk-box3.jpg 1x, ./images/adaptive/desk-box3@2x.jpg 2x"
+                src="./images/adaptive/desk-box3.jpg"
                 alt="Картинка планшета"
                 width="370px"
+                loading="lazy"
               />
               <p class="about__label">Дизайнерские решения</p>
             </li>
@@ -208,12 +211,36 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                srcset="./images/adaptive/igor.jpg 1x, ./images/adaptive/igor@2x.jpg 2x"
-                src="./images/adaptive/igor.jpg"
-                alt="Игорь Демьяненко"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-igor.webp 1x, ./images/adaptive/desk-igor@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-igor.jpg 1x, ./images/adaptive/desk-igor@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-igor.webp 1x, ./images/adaptive/tab-igor@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-igor.jpg 1x, ./images/adaptive/tab-igor@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-igor.webp 1x, ./images/adaptive/mob-igor@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-igor.jpg 1x, ./images/adaptive/mob-igor@2x.jpg 2x"
+                />
+                <img src="./images/adaptive/mob-igor.jpg" alt="Игорь Демьяненко" class="team__img" loading="lazy" />
+              </picture>
               <div class="team__text member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__role">Product Designer</p>
@@ -250,12 +277,36 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                srcset="./images/adaptive/olga.jpg 1x, ./images/adaptive/olga@2x.jpg 2x"
-                src="./images/adaptive/olga.jpg"
-                alt="Ольга Репина"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-olga.webp 1x, ./images/adaptive/desk-olga@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-olga.jpg 1x, ./images/adaptive/desk-olga@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-olga.webp 1x, ./images/adaptive/tab-olga@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-olga.jpg 1x, ./images/adaptive/tab-olga@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-olga.webp 1x, ./images/adaptive/mob-olga@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-olga.jpg 1x, ./images/adaptive/mob-olga@2x.jpg 2x"
+                />
+                <img src="./images/adaptive/mob-olga.jpg" alt="Ольга Репина" class="team__img" loading="lazy" />
+              </picture>
               <div class="team__text member">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p class="member__role">Frontend Developer</p>
@@ -292,12 +343,36 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                srcset="./images/adaptive/nikolai.jpg 1x, ./images/adaptive/nikolai@2x.jpg 2x"
-                src="./images/adaptive/nikolai.jpg"
-                alt="Николай Тарасов"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-nikolai.webp 1x, ./images/adaptive/desk-nikolai@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-nikolai.jpg 1x, ./images/adaptive/desk-nikolai@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-nikolai.webp 1x, ./images/adaptive/tab-nikolai@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-nikolai.jpg 1x, ./images/adaptive/tab-nikolai@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-nikolai.webp 1x, ./images/adaptive/mob-nikolai@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-nikolai.jpg 1x, ./images/adaptive/mob-nikolai@2x.jpg 2x"
+                />
+                <img src="./images/adaptive/mob-nikolai.jpg" alt="Николай Тарасов" class="team__img" loading="lazy" />
+              </picture>
               <div class="team__text member">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p class="member__role">Marketing</p>
@@ -334,12 +409,36 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                srcset="./images/adaptive/mihail.jpg 1x, ./images/adaptive/mihail@2x.jpg 2x"
-                src="./images/adaptive/mihail.jpg"
-                alt="Михаил Ермаков"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-mihail.webp 1x, ./images/adaptive/desk-mihail@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/adaptive/desk-mihail.jpg 1x, ./images/adaptive/desk-mihail@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-mihail.webp 1x, ./images/adaptive/tab-mihail@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/adaptive/tab-mihail.jpg 1x, ./images/adaptive/tab-mihail@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-mihail.webp 1x, ./images/adaptive/mob-mihail@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="./images/adaptive/mob-mihail.jpg 1x, ./images/adaptive/mob-mihail@2x.jpg 2x"
+                />
+                <img src="./images/adaptive/mob-mihail.jpg" alt="Михаил Ермаков" class="team__img" loading="lazy" />
+              </picture>
               <div class="team__text member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__role">UI Designer</p>
